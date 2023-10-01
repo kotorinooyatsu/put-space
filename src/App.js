@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import "./App.css";
 
-function App() {
+import BoxElement from './Component/BoxElement';
+import InputTextArea from './Component/InputTextArea';
+import OutputTextArea from './Component/OutputTextArea';
+import ButtonForConverting from './Component/ButtonForConverting';
+
+export default function App() {
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <BoxElement name=<InputTextArea /> />
+        <BoxElement name=<ButtonForConverting /> />
+        <BoxElement name=<OutputTextArea /> />
       </header>
     </div>
   );
 }
-
-export default App;
